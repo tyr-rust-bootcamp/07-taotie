@@ -78,6 +78,7 @@ allow = [
   "BSD-3-Clause",
   "ISC",
   "CC0-1.0",
+  "BSL-1.0",          # see https://github.com/DoumanAsh/xxhash-rust?tab=BSL-1.0-1-ov-file#readme, looks OK
 ]
 # List of explicitly disallowed licenses
 # See https://spdx.org/licenses/ for list of possible licenses
