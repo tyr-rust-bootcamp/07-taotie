@@ -99,6 +99,7 @@ fn verify_conn_str(s: &str) -> Result<DatasetConn, String> {
             match ext1 {
                 "csv" => Ok(DatasetConn::Csv(opts)),
                 "json" | "jsonl" | "ndjson" => Ok(DatasetConn::NdJson(opts)),
+                "parquet" => Ok(DatasetConn::Parquet(s.to_string())),
                 v => Err(format!("Invalid file extension: {}", v)),
             }
         }
