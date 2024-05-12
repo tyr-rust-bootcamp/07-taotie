@@ -13,6 +13,8 @@ clap = { version = "4.5.4", features = ["derive"] }
 crossbeam-channel = "0.5.12"
 datafusion = { version = "38.0.0", features = ["serde"] }
 dirs = "5.0.1"
+enum_dispatch = "0.3.13"
+oneshot = "0.1.6"
 parquet = "51.0.0"
 polars = { version = "0.39.2", features = [
   "parquet",
