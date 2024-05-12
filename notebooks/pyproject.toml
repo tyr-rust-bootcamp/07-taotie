@@ -1,0 +1,28 @@
+[project]
+name = "notebooks"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Tyr Chen", email = "tyr.chen@gmail.com" }
+]
+dependencies = [
+    "pandas>=2.2.2",
+    "pyarrow>=16.0.0",
+    "jupyterlab>=4.2.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/notebooks"]
